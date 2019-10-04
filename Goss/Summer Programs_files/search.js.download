@@ -1,0 +1,70 @@
+
+
+$(document).ready(function() {
+	$( "#search" ).click(function(e) {
+		e.preventDefault();
+		$(".search_box").toggleClass('active');
+		$("#top_search_input").focus();
+	});
+	
+	//new southeastern site search
+	$(document).on('submit', '#top_search_form', function(event){
+		var searchText = $.trim($('#top_search_input').val());
+		$('#top_search_input').val(searchText);
+		
+    	if (! is_valid_search_text(searchText)) {
+			$('#top_search_box_error').text('You must enter at least 3 letters to start your search.');
+			$("#top_search_box_error").show().delay(5000).fadeOut();
+			event.preventDefault();
+		}
+	});
+	
+	$(document).on('submit', '#top_news_search_form', function(event){
+		var searchText = $.trim($('#top_news_search_input').val());
+		$('#top_news_search_input').val(searchText);
+		
+    	if (! is_valid_search_text(searchText)) {
+			$('#top_news_search_box_error').text('You must enter at least 3 letters to start your search.');
+			$("#top_news_search_box_error").show().delay(5000).fadeOut();
+			event.preventDefault();
+		}
+	});
+	
+	var queryString = location.search.substr(3),//skip the first 3 characters '?q=' from the query string
+		positionAmp = queryString.indexOf('&'),
+		searchValue = '';
+	if (positionAmp > -1) {
+		searchValue = queryString.substr(0, queryString.indexOf('&'));	
+	} else {
+		searchValue = queryString.substr(0);
+	}
+	searchValue = decode_html(searchValue);
+	
+	$('#main_search_input').val(searchValue);
+	
+	$(document).on('submit', '#main_search_form', function(event){		
+		var searchText = $.trim($('#main_search_input').val());
+		
+		$('#main_search_input').val(searchText);
+		
+    	if (! is_valid_search_text(searchText)) {
+			$('#search_box_error').text('You must enter at least 3 letters to start your search.');
+			$("#search_box_error").show().delay(5000).fadeOut();
+			
+			event.preventDefault();
+		}
+	});
+
+});
+
+function is_valid_search_text(searchText) {
+    return (searchText.length < 3) ? false : true;
+}
+
+//see http://locutus.io/php/url/urldecode/
+function decode_html(str) {	
+	return decodeURIComponent((str + '').replace(/%(?![\da-f]{2})/gi, function () {
+      // PHP tolerates poorly formed escape sequences
+      return '%25'
+    }).replace(/\+/g, '%20'));
+}

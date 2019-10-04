@@ -1,0 +1,22 @@
+.slides li {
+	position: relative;	
+}
+
+.flex-title-only {
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	position: absolute;
+	z-index: 100;
+	bottom: 20px;
+	left: 20px;
+}
+
+.flex-title-only, .flex-title-only a {
+	color: #fff;
+	text-decoration: none; 
+}
+
+.flex-title-only a:hover {
+	text-decoration: underline !important; 
+}
+
+.flex-title-only a:after { content: " >>"; }

@@ -1,0 +1,26 @@
+/*GOOGLE FORM STYLING*/
+
+		#gform_content .page_intro{ display: none; }
+		#gform_content h2 { font: 30px 'RobotoBoldCondensed', Arial, sans-serif; margin-top: 20px; text-transform:uppercase;}	
+		#gform_content .ss-section-title { font: 21px 'RobotoCondensed', Arial, sans-serif; margin-top: 20px; text-transform:uppercase;}
+		#gform_content .ss-q-title, .ss-q-help{display: inline; /*margin-left: 20px;*/}
+		#gform_content .submit_form, .submit_form:hover, .reset_form, .reset_form:hover {
+					  color: #ffffff;
+					  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					  background-color: #224D82;
+					  background-image: -moz-linear-gradient(top, #224D82, #224D82);
+					  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#224D82), to(#224D82));
+					  background-image: -webkit-linear-gradient(top, #224D82, #224D82);
+					  background-image: -o-linear-gradient(top, #224D82, #224D82);
+					  background-image: linear-gradient(to bottom, #224D82, #224D82);
+					  background-repeat: repeat-x;
+					  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#224D82', endColorstr='#224D82', GradientType=0);
+					  border-color: #224D82 #224D82 #002a80;
+					  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+					  *background-color: #224D82;
+					  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+					
+					  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+					}
+
+/*END GOOGLE STYLE*/

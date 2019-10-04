@@ -1,0 +1,8 @@
+/* If sidenav is taller than content, makes same side to avoid highlight wrapping */
+$(document).ready(function() {
+	if ($('#sidebar').height() > $('#content').height()) {
+		$('#content').css("min-height", function(){ 
+			return $('#sidebar').height();
+		});
+	}
+});  

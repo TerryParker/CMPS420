@@ -1,0 +1,36 @@
+.slides li
+
+{
+	position: relative;	
+}
+
+.flex-caption {
+	background: rgba(51, 102, 165,0.6);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	font-size: 14px;
+	line-height: 18px;
+	position: absolute;
+	top: 0;
+	margin: 25px 0 0 50px;
+	padding: 3em 2em;
+	display: block;
+}
+
+.flex-caption .flex-title, .flex-caption .flex-title a {
+	font-size: 18px;
+	font-family: 'RobotoCondensed';
+	font-weight: bold;
+	color: #e9c225 !important;
+}
+
+.flex-caption .flex-title a { text-decoration: underline !important; }
+.flex-caption .flex-title a:after { content: " >>"; }
+
+@media screen and (max-width:767px) {
+	.flex-caption {
+		position: initial;
+		margin: 0;
+		background: rgb(51, 102, 165);
+	}
+}
