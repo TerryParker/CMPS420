@@ -2466,7 +2466,8 @@ fieldset:disabled a.btn {
 .btn-primary {
     color: #fff;
     background-color: #2d7a41;
-    border-color: #2d7a41
+    border-color: #000;
+    border: 2px solid #000
 }
 
 .btn-primary:hover {
@@ -6430,6 +6431,11 @@ button.bg-dark:hover {
 
 .bg-white {
     background-color: #fff !important
+}
+
+.bg-slu-green {
+    background-color: #2d7a41; 
+    border: 2px solid #000
 }
 
 .bg-transparent {
