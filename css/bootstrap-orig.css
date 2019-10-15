@@ -2464,14 +2464,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2d7a41;
-    border-color: #2d7a41
+    background-color: #007bff;
+    border-color: #007bff
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #29ce08;
-    border-color: #29ce08
+    background-color: #0069d9;
+    border-color: #0062cc
 }
 
 .btn-primary.focus,
@@ -4660,8 +4660,7 @@ input[type=submit].btn-block {
 
 .card-footer {
     padding: .75rem 1.25rem;
-    /*background-color: rgba(0, 0, 0, .03);*/
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(0, 0, 0, .03);
     border-top: 1px solid rgba(0, 0, 0, .125)
 }
 
@@ -9206,7 +9205,7 @@ a.text-dark:hover {
 }
 
 .text-muted {
-    color: #62a5df !important
+    color: #6c757d !important
 }
 
 .text-black-50 {
