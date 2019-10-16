@@ -1,0 +1,20 @@
+	
+//https://cookieconsent.insites.com/
+window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+		"palette": {
+			"popup": {
+				"background": "#444"
+			},
+			"button": {
+				"background": "#e9c225",
+				"text":"#444"
+			},
+		},
+		"content": {
+			"message": "This website uses cookies to ensure site visitors enjoy the best experience. By continuing to use this site, you accept our use of cookies and Privacy Statement. To learn more, please visit ",
+			"dismiss": "I agree",
+			"link": "Southeastern Privacy Statement.",
+			"href": "http://www.southeastern.edu/privacy",
+		},
+	})});

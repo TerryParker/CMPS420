@@ -1,0 +1,73 @@
+$(document).ready(function (){
+	$('#chat_link').click(function(){
+		var chat_id = $(this).data('chat-id');
+		show_chat_popup(chat_id);
+	});
+});
+
+var url = "https://www2.southeastern.edu/external/chat/app/";
+function show_chat_popup(chat_id)
+{
+	form_data = {'chat_id': chat_id};
+	$.ajax({
+		type	: 'GET',
+		dataType: 'jsonp',
+		url		: url + 'index',
+		data	: form_data,
+		success : function(success_message) {
+			$('#chat_window_item').html(success_message.chat_text);
+		}
+	});
+	$('#chat_popup').modal('show');
+}
+
+function show_email_form(chat_id)
+{
+	$('#chat_id').val(chat_id);
+	form_data = {'chat_id'	: chat_id};
+	$.ajax({
+		type	: 'GET',
+		dataType: 'jsonp',
+		url		: url + 'get_email_form',
+		data 	: form_data,
+		success : function(response){
+			$('#email_form_section').html(response.message);
+		}
+	});
+	$('#email_popup_box').modal('show');
+}
+
+function email_message()
+{
+	var form_data = {
+		'chat_id'	: $('#chat_id').val(),
+		'name' 		: $('#email_popup_name').val(),
+		'email'		: $('#email_popup_email').val(),
+		'message'	: $('#email_popup_message').val()
+	};
+	$.ajax({
+		type	: 'GET',
+		dataType: 'jsonp',
+		url		: url + 'email_message',
+		data	: form_data,
+		success : function(response){
+			if(response.status == 'error') {
+				$('#email_popup_error').html(response.message);
+				setTimeout(function(){
+					$('#email_popup_error').html('');
+				}, 8000);
+			} else {
+				$('#email_popup_success').html(response.message);
+				setTimeout(function(){
+					$('#email_popup_box').modal('hide');
+					$('#email_popup_success').html('');
+				}, 4000);
+			}
+		}
+	});
+}
+
+function hide_popup(popup)
+{
+	$('#' + popup).modal('hide');
+}

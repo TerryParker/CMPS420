@@ -1,0 +1,210 @@
+#contribute_content .col-sm-8 .pagination li{
+    margin:30px 0 0;
+}
+#catalog_search_form{
+    margin: 0 0 5px 5px;
+}
+/* Created a site-wide submit-btn class
+.submit-btn{
+    font-family: 'RobotoLight', Arial, sans-serif;
+    background: none repeat scroll 0 0 #007CCE;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    line-height: 22px;
+    text-shadow: none;
+    transition: all 0.25s ease 0s;
+    height: 40px;
+    padding: 0 20px;
+}
+.submit-btn:hover{
+    background-color: #228CD2;
+    outline: none;
+    text-decoration:none;
+    transition: 0.25s;
+} */
+#catalog_search_form .text-field, #catalog_search_form .dropdown{
+    border: 1px solid #555555;
+    border-radius: 0;
+    font: 1em 'RobotoRegular', Arial, sans-serif;
+    height: 35px;
+}
+.form-label{
+    display: block;
+    font-family: 'RobotoLight', Arial, sans-serif;
+    font-size: 0.8em;
+}
+.search-form-section{
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+.search-form-title{
+    background-color: #444444;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding:10px 10px 10px 5px;
+}
+.course-title{
+    list-style-type: none;
+    padding:4px;
+}
+.course-link{
+    padding:10px;
+}
+.course-section{
+    background-color: #F8F8F8;
+    padding: 5px;
+}
+.course-category{
+    border-bottom: 1px solid #999999;
+    padding:5px;
+}
+.course-category a{
+    color:inherit;
+}
+.course-category a{
+    text-decoration:none;
+}
+.search-index-bar{
+    text-align:center;
+}
+.pagination > li > .index-box{
+    background-color: #DDDDDD;
+    border-radius: 4px;
+    color: #444444;
+    margin: 5px;
+}
+.pagination > li{
+    background-color: #E9C225;
+}
+.pagination > li > .index-box:hover {
+    color: #444444;
+    background-color: #E9C225;
+    text-decoration: underline;
+}
+.pagination > li > .index-box-highlight{
+    background-color: #E9C225;
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* CSS for the Course Detail Pop-up box */
+.close-section{
+    float:right;
+    margin-top: -8px;
+}
+.popup-close{
+    font-size: 1em;
+}
+.close-icon{
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    border:2px solid #424242;
+    cursor: pointer;
+    margin-right:10px;
+}
+.close-icon:hover{
+    background-color: #E13300;
+    border:2px solid #990000;
+}
+.section-label{
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.course-info{
+    width:550px;
+    line-height: 23px;
+}
+.course-name{
+    background-color: #267E4A;
+    border-bottom: 1px solid #CCCCCC;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+.course-offered{
+    font-weight: normal;
+}
+.course-details{
+    padding: 1px 10px 10px;
+    background-color: #F1F1F1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.course-description{
+    padding-left: 10px;
+}
+.course-row{
+    margin-top:3px;
+}
+.section-list{
+    margin-top:5px;
+    padding-left:15px;
+    font-size:0.9em;
+}
+.section-detail-list{
+    padding-left:10px;
+    list-style-type: none;
+}
+.section-detail-list li{
+    padding:1px;
+}
+.section-list-item{
+    padding-left:5px;
+}
+.section-even{
+    background-color: #EEEEEE;
+}
+.section-odd{
+    background-color: #DDDDDD;
+}
+.catalogue-tabs {
+    margin:0;
+}
+.catalogue-tabs li a{
+    color:#888;
+    padding: 8px;
+}
+.catalogue-tabs > li {
+    font-weight: bold;
+    padding-right: 25px;
+}
+.catalogue-tabs > .active > a, .catalogue-tabs > .active > a:hover{
+    color: #0088cc;
+}
+.section-list .tab-content{
+    background-color: #FFFFFF;
+    padding:10px;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+/*END OF CSS FOR Course Detail Pop-up*/
+/* Scroll to Top Link Styling */
+.scroll-top{
+    background-color: #F7F7F8;
+    border:1px solid #BBBBBB;
+    border-radius: 50%;
+    cursor: pointer;
+    display:none;
+    padding:10px 12px;
+    position:fixed;
+    right:40px;
+    text-align:center;
+    top:500px;
+    z-index: 1000;
+}
+.scroll-top:hover{
+    background-color: #E9C225;
+}
+@media(max-width:769px) {
+    .course-info{
+        width:95%;
+    }
+}
