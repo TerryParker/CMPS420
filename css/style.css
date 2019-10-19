@@ -126,16 +126,23 @@ button:focus {
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
     background: transparent;
-    padding: 0px;
     border: 0px;
     border-radius: 0px; }
+    .header_area .navbar .navbar-brand{
+      padding-left:0px;
+      padding-right:80px;
+    }
     .header_area .navbar .nav .nav-item {
-      margin-right: 45px; }
+      
+      vertical-align: top;
+      margin-left:15px;
+      
+     }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/80px "Roboto", sans-serif;
-        text-transform: uppercase;
-        color: #222222;
-        padding: 0px;
+        font: 18px  sans-serif;
+        color:white;
+        vertical-align: top;
+        margin-right:30px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
