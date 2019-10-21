@@ -297,12 +297,12 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  min-height: 601px; }
+  min-height: 600px; }
   .home_banner_area .banner_inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 601px; }
+    min-height: 600px; }
     .home_banner_area .banner_inner .overlay {
       background: no-repeat scroll center center;
       position: absolute;
